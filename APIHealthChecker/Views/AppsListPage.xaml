@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:local="clr-namespace:APIHealthChecker.Views;assembly=APIHealthChecker"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    x:Class="APIHealthChecker.Views.AppsListPage"
+    xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+    xmlns:c="clr-namespace:APIHealthChecker.Converters;assembly=APIHealthChecker"
+    Title="AppsListPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <c:ItemTappedEventArgsConverter x:Key="itemTappedEventArgsConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ListView ItemsSource="{Binding MobApps}" VerticalOptions="FillAndExpand" SelectedItem="{Binding AppSelected, Mode=TwoWay}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell> 
+                    <StackLayout Orientation="Vertical" HeightRequest="30">
+                        <Label Text="{Binding Name}" HorizontalTextAlignment="Start" FontSize="15" VerticalOptions="CenterAndExpand"/>
+                        <Label Text="{Binding Description}" HorizontalTextAlignment="End" FontSize="13" VerticalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                </ViewCell>
+                    
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.Behaviors>
+            <b:EventToCommandBehavior EventName="ItemTapped" Command="{Binding TestAppCommand}" 
+                EventArgsConverter="{StaticResource itemTappedEventArgsConverter}" />
+        </ListView.Behaviors>
+    </ListView>
+	</ContentPage.Content>
+</ContentPage>

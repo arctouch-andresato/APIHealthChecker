@@ -1,0 +1,60 @@
+﻿{
+  "Name": "Guess",
+  "Description": "Guess main app",
+  "EndPoints": [
+    {
+      "Name": "Production Configuration",
+      "Description": "XML for App Configuration",
+      "URL": "https://www.cdn-guess.com/DataWarehouse/gMobileApplication_guess_v5.xml",
+      "IsPost": "false"
+    },
+    {
+      "Name": "Staging Configuration",
+      "Description": "XML for App Configuration",
+      "URL": "https://www.cdn-guess.com/DataWarehouse/gMobileApplication_guess_staging_v5.xml",
+      "IsPost": "false"
+    },
+    {
+      "Name": "Production Main Menu Items",
+      "Description": "Json for Main Menu Configuration",
+      "URL": "https://shop.guess.com/en/Menu/?MenuTypes=MainMenu&Language=en&Country=US",
+      "IsPost": "false"
+    },
+    {
+      "Name": "Staging Main Menu Items",
+      "Description": "Json for Main Menu Configuration",
+      "URL": "https://stage.guess.com/UsStageGuess/en/Menu/?MenuTypes=MainMenu&Language=en&Country=US ",
+      "IsPost": "false"
+    },
+    {
+      "Name": "Staging Women Category Example",
+      "Description": "Json for Category Women - Dresses Configuration",
+      "URL": "https://stage.guess.com/UsStageGuess/en/catalog/browse/women/apparel/view-all/?json=1&page=1",
+      "IsPost": "false"
+    },
+    {
+      "Name": "Staging Men Category Example",
+      "Description": "Json for Category men - tanks,t-shirts Configuration",
+      "URL": "https://206.82.200.87/UsStageGuess/en/catalog/browse/men/tanks-t-shirts/view-all/?json=1&page=1",
+      "IsPost": "false"
+    },
+    {
+      "Name": "Staging Product Detail Configuration",
+      "Description": "Json for Product Detail M71I53K44I2 Configuration",
+      "URL": "https://stage.guess.com/en/product/detail/M71I53K44I2/?json=1",
+      "IsPost": "false"
+    },
+    {
+      "Name": "Barcode scanner",
+      "Description": "Json Barcode scanner",
+      "URL": "https://lgapi.guess.com/gMobile/upc2prdcode_lookup/{barcode}",
+      "IsPost": "true"
+    },
+    {
+      "Name": "Get More to Love items",
+      "Description": "Json API endpoint we use to get More to Love items",
+      "URL": "https://lgapi.guess.com/gMobile/products_recommendations/M71I53K44I2",
+      "IsPost": "true"
+    }
+  ]
+}

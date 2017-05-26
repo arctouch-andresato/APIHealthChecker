@@ -1,0 +1,12 @@
+﻿[
+  {
+    "Name": "Guess",
+    "Description": "Main Guess App",
+    "FileName": "Guess"
+  },
+  {
+    "Name": "GByGuess",
+    "Description": "G By Guess App",
+    "FileName": "GByGuess"
+  }
+ ]
