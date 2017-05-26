@@ -7,7 +7,7 @@
     x:Class="APIHealthChecker.Views.AppsListPage"
     xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
     xmlns:c="clr-namespace:APIHealthChecker.Converters;assembly=APIHealthChecker"
-    Title="AppsListPage">
+    Title="API Health Checker">
     <ContentPage.Resources>
         <ResourceDictionary>
             <c:ItemTappedEventArgsConverter x:Key="itemTappedEventArgsConverter" />
