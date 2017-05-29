@@ -23,19 +23,19 @@
     {
       "Name": "Staging Main Menu Items",
       "Description": "Json for Main Menu Configuration",
-      "URL": "https://206.82.200.87/UsStageGbyGuess/en/Menu/?MenuTypes=MainMenu&Language=en&Country=US",
+      "URL": "http://206.82.200.87/UsStageGbyGuess/en/Menu/?MenuTypes=MainMenu&Language=en&Country=US",
       "IsPost": "false"
     },
     {
       "Name": "Staging Women Category Example",
       "Description": "Json for Category Women - Dresses Configuration",
-      "URL": "https://206.82.200.87/UsStageGuess/en/catalog/browse/women/dresses/view-all/?json=1&page=1",
+      "URL": "http://206.82.200.87/UsStageGuess/en/catalog/browse/women/dresses/view-all/?json=1&page=1",
       "IsPost": "false"
     },
     {
       "Name": "Staging Men Category Example",
       "Description": "Json for Category men - tanks,t-shirts Configuration",
-      "URL": "https://gbyguess.com/UsStageGuess/en/catalog/browse/men/tanks-t-shirts/view-all/?json=1&page=1",
+      "URL": "http://206.82.200.87/UsStageGuess/en/catalog/browse/men/tanks-t-shirts/view-all/?json=1&page=1",
       "IsPost": "false"
     },
     {
