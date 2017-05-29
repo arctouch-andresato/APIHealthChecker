@@ -66,7 +66,13 @@ namespace APIHealthChecker.ViewModels
                 var app = await MobAppRepo.GetMobApp(AppName);
                 if (app != null)
                 {
-                    Results = new ObservableCollection<TestResult>(await EndPointTestService.TestAllAppEndPoints(app));
+                    Results = new ObservableCollection<TestResult>(new List<TestResult>());
+					foreach (EndPoint endPoint in app.EndPoints)
+					{
+						var testResult = await EndPointTestService.TestEndPoint(endPoint.Url, endPoint.IsPost);
+						testResult.EndPoint = endPoint;
+						Results.Add(testResult);
+					}
                 }
             }
             catch (Exception ex)
